@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @note.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @note.body %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @note.tag %>
+</p>
+
+<%= link_to 'Back', user_notes_path %>
