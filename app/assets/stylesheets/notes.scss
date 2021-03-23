@@ -1,0 +1,41 @@
+// Place all the styles related to the Notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.notes {
+
+  table {
+    border-collapse: collapse;
+    font-size: large;
+    table-layout: fixed;
+  }
+
+  td {
+    border: 1px solid black;
+    padding: 12px;
+    margin: 0;
+    font-size: large;
+    max-width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  th {
+    border: 1px solid black;
+    padding: 12px;
+    margin: 0;
+  }
+
+  tr.list_line_even {
+    background-color: #ececec;
+  }
+
+  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+    padding: 12px;
+  }
+}

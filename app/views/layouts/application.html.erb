@@ -12,21 +12,12 @@
 
   <body onunload="">
     <%= render 'layouts/header' %>
-    <div class='container'>
+    <div class='<%= controller.controller_name %>'>
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <%= yield %>
     </div>
-    <script type="text/javascript">
-      window.onpageshow = function(evt) {
-        // If persisted then it is in the page cache, force a reload of the page.
-        if (evt.persisted) {
-          document.body.style.display = "none";
-          location.reload();
-        }
-      };
-    </script>
   </body>
   
 </html>
